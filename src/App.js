@@ -28,12 +28,12 @@ function App() {
         <form onSubmit={handleSubmit}>
           <div className='flex w-full'>
             <textarea
-              className='w-1/2 h-60 text-xl p-2 resize-none border-2 bg-orange-50 border-slate-600 rounded-md'
+              className='w-1/2 h-60 text-xl p-2 mx-2 resize-none border-2 bg-orange-50 border-slate-600 rounded-md'
               value={message}
               placeholder='Write in English'
               onChange={(e) => setMessage(e.target.value)}
             ></textarea>
-            <div className='w-1/2 h-60 text-xl p-2 bg-purple-50 border-2 border-slate-600 rounded-md'>
+            <div className='w-1/2 h-60 text-xl p-2 mx-2 bg-purple-50 border-2 border-slate-600 rounded-md'>
               {response}
             </div>
           </div>
